@@ -48,6 +48,15 @@ From Linux or macOS (cross-compiles the Windows exe):
 
 During development: `dotnet run --project src/TempBar` from an elevated terminal.
 
+## Releases
+
+`.github/workflows/release.yml` builds both exes on every push and pull request; they show up as a downloadable artifact on the run. Pushing a `v*` tag also creates a GitHub release with both exes attached:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 ## Menu
 
 | Item | What it does |
